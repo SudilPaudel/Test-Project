@@ -33,13 +33,15 @@
 }
 .hero{
     height: 100vh;
-    background-color: blue;
+    background-image: url("https://images.unsplash.com/photo-1640108930193-76941e385e5e?q=80&w=953&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     position: relative;
-    
+    /* background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; */
     align-items: center;
 }
 .hero-overlay{
-    background-color: rgba(0, 0, 0, 6);
+    background-color: rgba(165, 160, 160, 0.5);
     width: 100%;
     height: 100%;
     display: flex;
@@ -62,7 +64,7 @@
 
 }
 .hero-button{
-    background-color: aqua;
+    background-color: blue;
     color: aliceblue;
     padding: 0.5rem 1rem;
     border-radius: 4px;
