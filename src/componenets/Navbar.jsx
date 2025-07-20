@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom"
 import "../nav.css"
 
- const Navbar = ({meroName, home}) => {
+ const Navbar = () => {
   return (
   <nav className="navbar">
     <div className="navbar-container">
-      <h1 className="logo">{meroName}</h1>
+      <h1 className="logo">Everest Hotel</h1>
       <ul className="nav-links">
-        <li> <a href="#home">{home}</a> </li>
-        <li> <a href="#about">About</a> </li>
-        <li> <a href="#rooms">Rooms</a> </li> <li> <a href="#contact">Contact</a> </li>
+        <li> <Link to="/">Home</Link> </li>
+        <li> <Link to="/about">About</Link> </li>
+        <li> <Link to="#rooms">Rooms</Link> </li> 
+        <li> <Link to="/contacts">Contact</Link> </li>
       </ul>
 
     </div>

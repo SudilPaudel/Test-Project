@@ -5,6 +5,11 @@ import Footer from "./componenets/Footer";
 import { useState } from "react";
 import Form from "./componenets/Form";
 import RamroForm from "./componenets/RamroForm";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
+import PageNotFound from "./pages/PageNotFound";
 
 
 
@@ -34,11 +39,17 @@ const TotalProduct = [...topSellingProduct, ...generalProduct]
 console.log(TotalProduct)
   return (
    <>
-  {/* <NavBar meroName="Sudil Paudel" home="Ghar"/>
-  <HeroSection />
-  <Footer hotelname="Everest hotel"/> */}
-  {/* <Form /> */}
-  <RamroForm />
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path='/contacts' element={<Contacts />} />
+
+
+      <Route path='*' element={<PageNotFound />} />
+    </Routes>
+  </BrowserRouter>
+
    </>
     
   )
