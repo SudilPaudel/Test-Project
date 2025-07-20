@@ -2,6 +2,11 @@
 import NavBar from "./componenets/Navbar";
 import HeroSection from "./componenets/HeroSection";
 import Footer from "./componenets/Footer";
+import { useState } from "react";
+import Form from "./componenets/Form";
+import RamroForm from "./componenets/RamroForm";
+
+
 
 
 function App() {
@@ -27,13 +32,13 @@ const topSellingProduct = ["iphone14", "Samsung S23", "oneplus 11R"];
 const generalProduct = ["Honor y1", "Redmi c30", "realme C11"];
 const TotalProduct = [...topSellingProduct, ...generalProduct]
 console.log(TotalProduct)
-
   return (
    <>
-  <NavBar/>
+  {/* <NavBar meroName="Sudil Paudel" home="Ghar"/>
   <HeroSection />
-  <Footer />
-   
+  <Footer hotelname="Everest hotel"/> */}
+  {/* <Form /> */}
+  <RamroForm />
    </>
     
   )
