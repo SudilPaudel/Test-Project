@@ -5,11 +5,11 @@ import "../nav.css"
   return (
   <nav className="navbar">
     <div className="navbar-container">
-      <h1 className="logo">Everest Hotel</h1>
+      <Link to={"/"} className="logo">Everest Hotel</Link>
       <ul className="nav-links">
         <li> <Link to="/">Home</Link> </li>
         <li> <Link to="/about">About</Link> </li>
-        <li> <Link to="#rooms">Rooms</Link> </li> 
+        <li> <Link to="/rooms">Rooms</Link> </li> 
         <li> <Link to="/contacts">Contact</Link> </li>
       </ul>
 

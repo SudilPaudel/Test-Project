@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../nav.css"
 const HeroSection =()=>{
     return(
@@ -11,7 +12,7 @@ const HeroSection =()=>{
                     <p>
                         Experience well built room
                     </p>
-                    <a href="#rooms" className="hero-button">Book Now</a>
+                    <Link to="/rooms" className="hero-button">Book Now</Link>
                 </div>
             </div>
         </section>

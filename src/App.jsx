@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import PageNotFound from "./pages/PageNotFound";
+import Rooms from "./pages/Rooms";
 
 
 
@@ -44,8 +45,7 @@ console.log(TotalProduct)
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path='/contacts' element={<Contacts />} />
-
-
+      <Route path="/rooms" element={<Rooms />} />
       <Route path='*' element={<PageNotFound />} />
     </Routes>
   </BrowserRouter>

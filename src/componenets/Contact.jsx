@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Contact = () => {
+  const email = import.meta.env.VITE_MYEMAIL
+
+  const formsubmiturl = `https://formsubmit.co/${email}` 
   return (
     <>
     <section className="bg-blue-50 dark:bg-slate-800" id="contact">
@@ -124,7 +127,7 @@ const Contact = () => {
           <h2 className="mb-4 text-2xl font-bold dark:text-white">
             Ready to Get Started?
           </h2>
-          <form id="contactForm">
+          <form action={formsubmiturl} method="POST" id="contactForm">
             <div className="mb-6">
               <div className="mx-0 mb-1 sm:mb-4">
                 <div className="mx-0 mb-1 sm:mb-4">
@@ -163,7 +166,7 @@ const Contact = () => {
                 />
                 <textarea
                   id="textarea"
-                  name="textarea"
+                  name="message"
                   cols={30}
                   rows={5}
                   placeholder="Write your message..."
