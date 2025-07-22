@@ -6,10 +6,9 @@ import Room from '../componenets/Room'
 const Rooms = () => {
   return (
     <>
-    <Navbar />
+   
     <Room />
-    <Footer/>
-
+    
     </>
   )
 }

@@ -6,9 +6,9 @@ import About1 from '../componenets/About'
 const About = () => {
   return (
     <>
-    <Navbar />
+    
     <About1 />
-    <Footer />
+    
     </>
   )
 }

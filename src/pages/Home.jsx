@@ -6,9 +6,9 @@ import Footer from '../componenets/Footer'
 const Home = () => {
   return (
     <>
-    <Navbar />
+    
     <HeroSection />
-    <Footer />
+    
   </>
   )
 }

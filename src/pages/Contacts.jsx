@@ -6,9 +6,9 @@ import Contact from '../componenets/Contact'
 const Contacts = () => {
   return (
    <>
-   <Navbar />
+ 
    <Contact />
-   <Footer />
+  
    </>
   )
 }
