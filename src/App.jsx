@@ -13,6 +13,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Rooms from "./pages/Rooms";
 import Layout from "./pages/layouts/Layout";
 import API from "./pages/API";
+import API1 from "./pages/API1";
 
 
 
@@ -51,6 +52,7 @@ function App() {
             <Route path='contacts' element={<Contacts />} />
             <Route path="rooms" element={<Rooms />} />
             <Route path="api" element={<API />} />
+            <Route path="api1" element={<API1 />} />
           </Route>
           <Route path='*' element={<PageNotFound />} />
           

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Contact = () => {
-  const email = import.meta.env.VITE_MYEMAIL
 
-  const formsubmiturl = `https://formsubmit.co/${email}` 
+useEffect(() => {
+  console.log("Email", import.meta.env.VITE_MYEMAIL);
+}, []);
+
+  const formsubmiturl = `https://formsubmit.co/sudilcs@gmail.com`;
   return (
     <>
     <section className="bg-blue-50 dark:bg-slate-800" id="contact">
